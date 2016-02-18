@@ -23,5 +23,27 @@ export default Ember.Controller.extend({
 				console.log('Error Disconnecting (possibly connect first)');
 			});
 		},
+		metawear_turnOnLED_red: function () {
+			console.log('Turning on metawear LED');
+			metawear.setLED(metawear.COLOR.RED);
+			metawear.play(true);
+
+		},
+		metawear_turnOnLED_blue: function () {
+			console.log('Turning on metawear LED');
+			metawear.setLED(metawear.COLOR.BLUE);
+			metawear.play(true);
+
+		},
+		metawear_turnOnLED_green: function () {
+			console.log('Turning on metawear LED');
+			metawear.setLED(metawear.COLOR.GREEN);
+			metawear.play(true);
+
+		},
+		metawear_turnOffLED: function(){
+			console.log('Turning off metawear LED');
+			metawear.stop(true);
+		},
 	}
 });
